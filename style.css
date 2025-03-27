@@ -1,0 +1,128 @@
+/* Basic Reset & Body Styling */
+body {
+    font-family: sans-serif; /* Choose a nicer font later if you like */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Light grey background */
+    color: #333; /* Dark grey text */
+}
+
+header, main, footer {
+    max-width: 800px; /* Limit content width */
+    margin: 20px auto; /* Center content */
+    padding: 20px;
+    background-color: #fff; /* White background for content areas */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Subtle shadow */
+}
+
+header {
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+h1 {
+    color: #333;
+}
+
+h2 {
+    color: #F7661F; /* Orangetheory Orange for main headings */
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+    margin-top: 40px; /* Space between sections */
+}
+
+h3 {
+    color: #555; /* Darker grey for feature subheadings */
+    margin-top: 30px;
+}
+
+.sub-headline {
+    font-size: 1.1em;
+    color: #555;
+}
+
+/* Solution Section */
+#solution .example-queries {
+    background-color: #eee;
+    border-left: 4px solid #F7661F; /* Orange accent */
+    padding: 10px 20px;
+    margin: 20px 0;
+}
+#solution blockquote {
+    margin: 10px 0;
+    font-style: italic;
+    color: #555;
+}
+
+
+/* Features Section */
+#features ul {
+    list-style: none; /* Remove default bullets */
+    padding-left: 0;
+}
+
+#features li {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+
+#features li::before { /* Custom bullet using orange */
+    content: '✓'; /* Checkmark or could use • */
+    color: #F7661F; /* Orangetheory Orange */
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+/* CTA Section */
+#cta {
+    text-align: center;
+    background-color: #333; /* Dark background for CTA */
+    color: #fff; /* White text for CTA */
+    padding: 40px 20px;
+}
+
+#cta h2 {
+    color: #fff; /* White heading on dark background */
+    border-bottom: none;
+}
+
+#waitlist-button {
+    background-color: #F7661F; /* Orangetheory Orange */
+    color: #fff; /* White text */
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 20px 0;
+    transition: background-color 0.3s ease;
+}
+
+#waitlist-button:hover {
+    background-color: #d65a1a; /* Darker orange on hover */
+}
+
+.cta-subtext {
+    font-size: 1em;
+    margin-bottom: 15px;
+}
+
+.privacy-note {
+    font-size: 0.9em;
+    color: #ccc; /* Lighter text for privacy note */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 15px;
+    font-size: 0.9em;
+    color: #777;
+    background-color: #f4f4f4;
+    box-shadow: none;
+}
